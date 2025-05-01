@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.young-serif-regular {
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+:root {
+    --first-color: #f3e5d8;
+    --secound-color: #662b46;
+    --theard-color: #745246;
+}
+
+body {
+    background-color: var(--first-color);
+    line-height: 1.6;
+    font-family: "Young Serif", serif;
+}
+
+.white-container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 30px;
+    width: 55%;
+    flex-wrap: wrap;
+    padding: 20px 20px 20px 30px;
+}
+
+@media (max-width: 767px) {
+    .white-container {
+        width: 100%;
+        border-radius: unset;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    position: relative;
+    padding: 25px;
+}
+
+.image {
+    width: 100%;
+    position: relative;
+    top: 0;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+@media (max-width: 767px) {
+    .image {
+        border-radius: unset;
+        padding: 0;
+    }
+}
+
+.container h1 {
+    font-size: 45px;
+    line-height: 1.4;
+}
+
+.container:nth-child(2) {
+    font-size: 20px;
+}
+
+.container .pre-time {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff7fc;
+    width: 100%;
+}
+
+.container .pre-time h3 {
+    color: var(--secound-color);
+    font-weight: 800;
+}
+
+.container .pre-time ul {
+    margin: 20px;
+    list-style: none;
+}
+
+.container .pre-time ul li {
+    position: relative;
+    margin: -10px;
+}
+
+.container .pre-time ul li span {
+    font-weight: bold;
+}
+
+.container .pre-time ul li::before {
+    content: ".";
+    color: var(--secound-color);
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    left: -17px;
+    top: -3px;
+}
+
+.container h2 {
+    color: var(--theard-color);
+    font-weight: 800;
+}
+
+.container ul {
+    margin: 20px;
+    list-style: none;
+    width: 100%;
+}
+
+.container ul li {
+    position: relative;
+    margin: -10px;
+}
+
+.container ul li::before {
+    content: ".";
+    color: var(--theard-color);
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    left: -17px;
+    top: -3px;
+}
+
+.container hr {
+    font-weight: bold;
+}
+
+.container ol {
+    margin: 20px;
+    list-style: none;
+    width: 100%;
+}
+
+.container ol li {
+    position: relative;
+    margin: 0;
+    counter-increment: num;
+}
+
+.container ol li::before {
+    content: counter(num);
+    color: var(--theard-color);
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    left: -17px;
+    top: -3px;
+}
+.container ol li::after {
+    content: ".";
+    color: var(--theard-color);
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    left: -9px;
+    top: -3px;
+}
+
+.container ol li span {
+    font-weight: bold;
+}
+
+.container .H {
+    padding-bottom: 10px;
+}
+
+.container table {
+    width: 100%;
+}
+
+.container table tr {
+    padding: 10px;
+    display: flex;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.26);
+}
+
+.container table tr td {
+    display: inherit;
+    width: 50%;
+    justify-content: flex-start;
+}
+
+.container table tr td:nth-child(2) {
+    color: var(--theard-color);
+    font-weight: bold;
+}
+
+.container .Hr {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.288);
+    width: 100%;
+    padding: 5px;
+}
